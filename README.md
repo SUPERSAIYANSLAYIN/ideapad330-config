@@ -18,6 +18,7 @@ using **4.14.101**.
 7. You need to add the following lines to be executed upon starting Xorg server (This is for external GPU to work):
 
 xrandr --setprovideroutputsource modesetting NVIDIA-0
+
 xrandr --auto
 
 
