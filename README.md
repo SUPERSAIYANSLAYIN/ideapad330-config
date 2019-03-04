@@ -17,8 +17,10 @@ using **4.14.101**.
 "40-libinput.conf" to /etc/X11/xorg.conf.d.
 7. You need to add the following lines to be executed upon starting Xorg server (This is for external GPU to work):
 
-`xrandr --setprovideroutputsource modesetting NVIDIA-0`
-`xrandr --auto`
+```
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+```
 
 
 linux-firmware package is required for Wi-Fi to work.
