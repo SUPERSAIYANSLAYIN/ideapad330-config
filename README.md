@@ -15,5 +15,10 @@ using **4.14.101**.
 5. Copy xorg.conf to /etc/X11 to enable external GPU (Nvidia).
 6. (OPTIONAL) If you want to enable "Double tap to click" on touchpad, copy 
 "40-libinput.conf" to /etc/X11/xorg.conf.d.
+7. You need to add the following lines to be executed upon starting Xorg server (This is for external GPU to work):
+
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 
 linux-firmware package is required for Wi-Fi to work.
