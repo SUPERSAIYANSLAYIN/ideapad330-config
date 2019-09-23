@@ -12,6 +12,7 @@ Everything, including webcam, touchpad, battery status, Wi-Fi (If adapter is Int
 6. (OPTIONAL) If you want to enable "Double tap to click" on touchpad, copy 
 "40-libinput.conf" to /etc/X11/xorg.conf.d.
 7. You need to add the following lines to be executed upon starting Xorg server (This is for external GPU to work):
+8. Install thermald for improved battery life.
 
 ```
 xrandr --setprovideroutputsource modesetting NVIDIA-0
